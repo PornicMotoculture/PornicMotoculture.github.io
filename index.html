@@ -50,31 +50,6 @@
                 <h2 id="rep"></h2>
 
                 <script>
-                    var d = new Date();
-                    var n = d.getDay();
-                    var now = d.getHours() + "." + d.getMinutes();
-                    var weekdays = [
-                        ["Sunday", 8.00, 12.00, 14.00,18.00],
-                        ["Monday", 8.00, 12.00, 14.00,18.00],
-                        ["Tuesday", 8.00, 12.00, 14.00,18.00],
-                        ["Wednesday", 8.00, 12.00, 14.00,18.00],
-                        ["Thursday", 8.00, 12.00, 14.00,18.00],
-                        ["Friday", 9.00, 12.00],
-                        ["Saturday"]
-                    ];
-                    var day = weekdays[n];
-            
-                    if (now > day[1] && now < day[2] || now > day[3] && now < day[4]) {
-                        rep.innerHTML = "Ouvert !" ;
-                        rep.style.color= 'green';
-                    }
-                    else {
-                         rep.innerHTML = "Fermé !";
-                         rep.style.color = 'red';
-                    }
-                </script>
-
-                <script>
                     var heuresDiv = document.querySelector('.heures');
                     var dateDiv = document.querySelector('.date');
 
